@@ -17,62 +17,52 @@
             "group": "Get Started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "understanding-store-environments",
+              "understanding-the-dashboard",
+              "backups",
+              "billing-billing-details",
+              "billing-invoices",
+              "billing-modify-plan",
+              "billing-my-plan-plan-details",
+              "billing-payment-methods",
+              "cdn",
+              "collaborators-backup-providers",
+              "collaborators-general-settings",
+              "collaborators-list-invite",
+              "creating-managing-restoring-snapshots",
+              "crons",
+              "database-credentials",
+              "email-sending",
+              "file-manager",
+              "logs",
+              "managing-configurations",
+              "managing-domains-ssl",
+              "performance-analytics",
+              "performance-caching",
+              "plugin-theme-management",
+              "products-plugins",
+              "products-themes",
+              "redirect-rules",
+              "reports-dashboard",
+              "reports-orders",
+              "reports-products",
+              "reports-sales-revenue",
+              "reports-traffic",
+              "security",
+              "settings-general",
+              "settings-php",
+              "snapshots-migration",
+              "store-overview",
+              "understanding-collaborators",
+              "understanding-configurations",
+              "understanding-snapshots",
+              "wp-config-settings"
             ]
           }
         ]
       }
     ],
     "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
     }
   },
   "logo": {

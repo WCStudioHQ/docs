@@ -1,0 +1,44 @@
+# 🧬 PHP Settings
+
+WC Studio gives you direct access to essential PHP configuration values for your store — no server access required. These settings help you adjust performance, file upload limits, and script behavior.
+
+---
+
+## 📍 Go to: WC Studio → Stores → Select a Store → Settings → PHP
+
+---
+
+## 🧠 Current PHP Version
+
+| Field           | Description                       |
+|-----------------|-----------------------------------|
+| **PHP Version** | Current PHP runtime for your store (e.g. `8.4`) |
+
+> ⚠️ Note: PHP version is by default managed by WC Studio for stability and compatibility. You may choose custom PHP version, or you may contact support.
+
+---
+
+## ⚙️ PHP Configuration Values
+
+Below are the configurable values available in your dashboard:
+
+| Setting Name                        | Default Value | Description                                                                 |
+|-------------------------------------|---------------|-----------------------------------------------------------------------------|
+| **Max Execution Time** (`max_execution_time`) | `30 sec`      | Maximum time a script is allowed to run before timeout.                     |
+| **Max Input Time** (`max_input_time`)         | `-1 sec`      | Maximum time a script can spend parsing input data. `-1` = unlimited.       |
+| **Max Input Vars** (`max_input_vars`)         | `1000`        | Max number of input variables per request (form fields, query params).      |
+| **Memory Limit** (`memory_limit`)             | `128 MB`      | Maximum amount of memory a script can consume.                              |
+| **Post Max Size** (`post_max_size`)           | `8 MB`        | Maximum size of POST data, including file uploads.                          |
+| **Upload Max Filesize** (`upload_max_filesize`)| `2 MB`        | Maximum allowed size for each uploaded file.                                |
+| **Session Max Lifetime** (`session.gc_maxlifetime`) | `1440 sec` | How long session data is stored before being cleaned up.                    |
+| **Output Buffering** (`output_buffering`)     | `4096 bytes`  | Controls the amount of data that is buffered before being sent to the browser. |
+| **Allow URL fopen** (`allow_url_fopen`)       | `On` or `Off` | Enables file access via URL (e.g. using `file_get_contents()` on URLs).     |
+
+---
+
+## 💡 Tips for Store Owners
+
+- ✅ Increase **upload size** limits if you're uploading large images, videos, or product files.
+- ✅ Use a **higher memory limit** if you're running multiple heavy plugins or page builders.
+- ✅ Set `max_execution_time` higher if you're importing large product catalogs.
+- ✅ Leave `allow_url_fopen` enabled if you're using external API integrations.

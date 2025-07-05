@@ -1,0 +1,54 @@
+# ⚡ Performance – Caching
+
+WC Studio provides advanced caching options to speed up your WooCommerce store and reduce server load. From page-level caching to in-memory object caching, these tools ensure your site runs fast and efficiently.
+
+---
+
+## 📍 Go to: WC Studio → Stores → Select a Store → Performance → Caching
+
+---
+
+## 🚀 Available Caching Types
+
+### 📄 Page Cache (FastCGI Cache)
+
+**Recommended:** Enabled by default for optimal performance.
+
+- Utilizes **Nginx FastCGI Cache** for full-page caching.
+- Reduces server processing time by serving static HTML versions of your pages.
+- Especially effective for high-traffic product and landing pages.
+
+> 💡 Best for: Speeding up page load times across your entire storefront.
+
+---
+
+### 🧠 Object Cache (Redis)
+
+**Enabled** for all stores using WC Studio’s managed infrastructure.
+
+- Stores repeated database queries and API calls in fast-access memory.
+- Improves performance by **reducing direct database hits**.
+- Powered by **Redis** — a lightning-fast in-memory key-value store.
+
+> 💡 Best for: Speeding up backend performance, admin dashboard, and dynamic store features like filters, carts, and search.
+
+---
+
+## 🔄 Clearing Cache
+
+You can manually clear object cache:
+
+1. Navigate to **Performance → Caching**
+2. Click the **"Clear Cache"** button under **Object Cache**
+
+> ⚠️ Use this if you've updated plugins, themes, or made changes that aren’t showing up on the frontend.
+
+---
+
+## 🧰 Cache Modes Summary
+
+| Cache Type        | Status     | Description                                         |
+|-------------------|------------|-----------------------------------------------------|
+| **Page Cache**    | FastCGI    | Full-page cache using Nginx (Recommended)           |
+| **Object Cache**  | Redis      | Stores DB queries & API calls in memory             |
+| **None**          | Optional   | Disable caching (not recommended for live sites)    |

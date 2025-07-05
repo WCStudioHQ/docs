@@ -1,0 +1,56 @@
+# 🗂️ Backups
+
+WC Studio’s backup system helps you protect your store by regularly saving your files and databases. You can configure custom backup schedules and view/download previous snapshots — all without relying on external plugins or manual exports.
+
+---
+
+## 📍 Go to: WC Studio → Stores → Select a Store → Backups
+
+Backups are available on **Business plans and above**. If you're on a lower-tier plan, you'll be prompted to **Upgrade Subscription** to enable this feature.
+
+---
+
+## ⚙️ Backup Setting List
+
+Create and manage scheduled backups based on your preferences.
+
+### ➕ Add Backup Setting
+
+When adding a new backup setting, you'll configure:
+
+| Field        | Description                                                                 |
+|--------------|-----------------------------------------------------------------------------|
+| **Provider** | Backup storage provider (WC Studio's default or third-party integrations)   |
+| **Database** | Whether to include the store’s database in backups (✅ Recommended)          |
+| **File**     | Whether to include store files (themes, plugins, media)                     |
+| **Frequency**| How often backups are created (e.g. Daily, Weekly, Monthly)                 |
+| **Retention**| How many backups to retain before auto-deletion                             |
+| **Time**     | Time of day to run the backup                                                |
+| **Status**   | Enable or disable the setting                                                |
+
+Once configured, the settings will appear in a list you can edit, delete, or disable.
+
+---
+
+## 🗃️ Backup Table
+
+This section shows all generated backups for the selected store.
+
+| Column      | Description                            |
+|-------------|----------------------------------------|
+| **Sl**      | Serial number                          |
+| **Backup**  | Auto-generated backup name or ID       |
+| **Type**    | What was included: Full, Database only, Files only |
+| **Size**    | File size of the backup (e.g., 300 MB) |
+| **Date**    | When the backup was created            |
+| **Status**  | Success, Failed, In-Progress           |
+| **Action**  | Download, Restore, or Delete           |
+
+---
+
+## 💡 Pro Tips
+
+- ✅ Schedule backups **daily** for high-traffic stores or active product catalogs
+- ✅ Always take a **manual backup** before major updates or plugin installations
+- ✅ Combine with **Snapshots** for layered rollback options
+- ✅ Use the **Retention** feature to avoid clutter and storage overuse

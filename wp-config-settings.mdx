@@ -1,0 +1,78 @@
+# 🛠 WP Config Settings
+
+WC Studio gives you developer-level control over key WordPress constants — allowing you to enable or disable debugging, script behaviors, query logs, and core update settings without touching `wp-config.php`.
+
+---
+
+## 📍 Go to: WC Studio → Stores → Select a Store → Advanced → WP Config
+
+---
+
+## ⚙️ Available Config Options
+
+Each setting includes a description and toggle. Use these features responsibly — many are intended for **development and debugging only**.
+
+---
+
+### 🐞 Enable Debug Mode (`WP_DEBUG`)
+
+- Enables the display of PHP errors and warnings across your site.
+- Useful during development to catch code issues.
+- 🔴 **Recommended: OFF** on live sites.
+
+---
+
+### 🪵 Log Errors
+
+- Stores error logs in a file for easier debugging.
+- Allows you to investigate issues without showing them to visitors.
+
+💡 Use this with **debug mode enabled** to capture detailed logs without exposing them publicly.
+
+---
+
+### ⚠️ Display PHP Errors (`WP_DEBUG_DISPLAY`)
+
+- Displays PHP errors directly on the frontend.
+- 🔴 **Recommended: OFF** unless you're actively debugging.
+
+---
+
+### 🧪 Enable Script Debug
+
+- Forces WordPress to use **unminified core JS and CSS files**.
+- Helps developers diagnose issues in core scripts.
+- 🔴 Should be disabled in production environments.
+
+---
+
+### 🚫 Disable JavaScript Concatenation
+
+- Prevents WordPress from combining JS files in the admin panel.
+- Useful for debugging issues caused by script conflicts or minification.
+- 🔴 Leave disabled unless you're troubleshooting.
+
+---
+
+### 📉 Enable Save Queries (`SAVEQUERIES`)
+
+- Logs all database queries to help you analyze performance.
+- May slow down your site if left on.
+- 🟡 Use temporarily in staging or dev environments.
+
+---
+
+### 🛡 Disable WordPress Core Updates
+
+- Prevents automatic updates to WordPress core.
+- Useful if you're managing updates manually or running a heavily customized site.
+
+> ⚠️ **Note:** Keep track of security patches if you disable auto-updates.
+
+---
+
+## 💡 Pro Tips
+
+- Always test these settings in a **staging environment** before applying them to live stores.
+- Combine **error logging** with **object cache** for safe debugging workflows.
+- Revert all debug-related settings to OFF before launching.

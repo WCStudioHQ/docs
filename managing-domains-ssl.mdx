@@ -1,0 +1,73 @@
+# 🌐 Managing Domains & SSL
+
+Your store's domain and SSL setup are crucial for accessibility, branding, and customer trust. WC Studio makes it simple to connect your own domain and automatically secure it with SSL.
+
+---
+
+## 📍 Go to: WC Studio → Stores → Select a Store → Manage → Domains
+
+This section lets you manage:
+- Custom domains and subdomains
+
+---
+
+## 🌍 Domain Management
+
+### ✅ Add a Custom Domain
+
+To use your own domain (like `yourstore.com`):
+
+1. Navigate to the **Domains** tab.
+2. Click **“Add Domain”**.
+3. Enter your domain name (e.g., `store.yourbrand.com`).
+4. WC Studio will display DNS records (A, CNAME) to add to your domain registrar.
+
+🛠 Once the DNS propagates, your domain will connect to your WC Studio store.
+
+---
+
+### 🔁 Set a Primary Domain
+
+If you have multiple domains/subdomains:
+
+- Choose one as the **primary domain**.
+- WC Studio will automatically redirect all traffic from secondary domains to the primary one.
+- This helps with SEO and avoids duplicate content issues.
+
+---
+
+### 🆓 Default Subdomain
+
+Every store also includes a free subdomain:  
+`yourstore.wcstudio.com`
+
+✅ Useful for testing, development, or staging environments.
+
+---
+
+## 📍 Go to: WC Studio → Stores → Select a Store → Manage → SSL
+
+This section lets you manage:
+- SSL certificates and HTTPS settings
+
+---
+
+## 🔒 SSL Certificate Setup
+
+WC Studio provides **automatic SSL installation** through Let's Encrypt for all domains — no configuration required.
+
+### ✅ Auto SSL Installation
+WC Studio automatically installs **SSL certificates** for both subdomains and custom domains via Let's Encrypt.
+
+- No manual configuration is required.
+- Certificates are renewed automatically.
+
+💡 **Best Practice:** For better SEO and customer trust, always keep HTTPS forced.
+
+---
+
+## 💡 Pro Tips
+
+- ✅ Verify DNS records using tools like [whatsmydns.net](https://www.whatsmydns.net) if propagation is delayed.
+- ✅ Use your **free WC Studio subdomain** while setting up your store, then switch to your custom domain later.
+- ✅ Always force HTTPS for security, PCI compliance, and trust badges.
