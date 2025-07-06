@@ -1,0 +1,106 @@
+# 🔒 Security
+
+WC Studio offers a comprehensive set of security tools that protect your store from common threats, reduce vulnerabilities, and give you more control over site accessibility.
+
+You can enable or disable specific WordPress-level security settings directly from your dashboard — no third-party plugins required.
+
+---
+
+## 📍 Go to: WC Studio → Stores → Select a Store → Advanced → Security
+
+---
+
+## 🛡️ Firewall Protection
+
+### ✅ 7G Firewall
+A powerful server-level firewall developed by Perishable Press.
+
+- Blocks malicious traffic and known exploit patterns
+- Lightweight and highly efficient
+- Ideal for preventing brute force, spam, and injection attacks
+
+---
+
+## 📦 Content & Protocol Restrictions
+
+These settings disable rarely used WordPress features that can be exploited if left active.
+
+### 🚫 Disable XML-RPC
+- Blocks external systems from attempting to authenticate or publish content.
+- Recommended unless you're using external apps or integrations like Jetpack.
+
+### 🚫 Disable RSS and Atom Feeds
+- Disables all XML feed outputs (RSS/Atom).
+- Useful for stores that don’t rely on blog subscribers or feed readers.
+
+### 🚫 Disable `wp-links-opml.php`
+- Prevents public access to the OPML export file.
+- A rarely used feature — safe to disable in most cases.
+
+---
+
+## 📁 Directory Protection
+
+These options prevent public access to critical WordPress directories.
+
+### 🔐 Protect `wp-content` Directory
+- Blocks direct access to files like backups, config files, and uploads.
+- Helps prevent attackers from accessing sensitive assets.
+
+### 🔐 Protect `wp-includes` Directory
+- Restricts access to WordPress core include files.
+- Avoids exposure of vulnerable paths to potential attackers.
+
+---
+
+## 🙋 User Interaction Controls
+
+Disable interactions that may not be relevant to your store setup.
+
+### 🚫 Disable Comments
+- Turns off commenting functionality across the entire site.
+- Useful for stores that don’t include a blog or discussion features.
+
+### 🚫 Disable Trackbacks
+- Prevents automatic notifications (trackbacks/pingbacks) from external blogs.
+
+---
+
+## 🧑‍💻 Admin & Login Security
+
+Lock down your WordPress admin area during downtime or active attack periods.
+
+### 🚫 Disable WP Admin
+- Temporarily hides access to `/wp-admin`.
+- Useful during vacations or maintenance windows.
+
+### 🚫 Disable Login Page
+- Hides or disables `wp-login.php`.
+- Can be used to prevent brute-force attacks or restrict access entirely.
+
+---
+
+## ⚙️ Advanced Security Settings
+
+Add extra layers of protection to your WordPress installation.
+
+### 🔐 Add Security Headers
+- Adds headers like `X-Content-Type-Options`, `Strict-Transport-Security`, `X-Frame-Options`, etc.
+- Helps prevent clickjacking, XSS, and other browser-based attacks.
+- Recommended only if **SSL is enabled**.
+
+### 🚫 Disable Themes & Plugins Editor
+- Removes the code editors from Appearance → Theme/Plugin Editor.
+- Prevents accidental or malicious code changes via the dashboard.
+
+### 🚫 Disable Themes & Plugins Update and Installation
+- Disables the ability to install or update plugins/themes from within WordPress.
+- Useful for locking down a production environment.
+
+---
+
+## 💡 Best Practices
+
+- ✅ Use a combination of **Firewall**, **Directory Protection**, and **Security Headers**.
+- ✅ Disable unnecessary features like XML-RPC, feeds, and editors.
+- ✅ Always enable **backups** and take a snapshot before applying advanced security changes.

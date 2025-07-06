@@ -1,0 +1,54 @@
+# ⏱️ Managing Cron Jobs
+
+WC Studio makes it easy to create and manage cron jobs directly from your dashboard without server-level access.
+
+---
+
+## 📍 Accessing Cron Jobs
+
+**Go to:** `WC Studio → Stores → Select a Store → Advanced → Crons`
+
+---
+
+## 🧾 Creating a New Cron Job
+
+You can create a cron job by specifying the **command** you want to run and selecting how frequently it should be executed.
+
+### ✅ Required Fields
+
+| Field         | Description                                                                 |
+|---------------|-----------------------------------------------------------------------------|
+| **Command**   | The shell command to be executed. Example:<br/>`cd /path/to/your/project && php artisan schedule:run` |
+| **Frequency** | Choose how often this task should run:<br />- Minutely<br />- Hourly<br />- Daily<br />- Weekly<br />- Monthly |
+
+### 🔧 Steps to Add a Cron
+
+1. Enter your command in the **Command** field.
+2. Select a frequency using the **Frequency** dropdown.
+3. Click **Save Cron** to schedule the task.
+
+💡 **Pro Tip:** Use absolute paths in your command for more reliability.
+
+---
+
+## 📋 Cron Jobs Table
+
+After saving, your cron jobs will appear in a table with the following details:
+
+| Column        | Description                                         |
+|---------------|-----------------------------------------------------|
+| **Sl**        | Serial number of the cron entry                     |
+| **Command**   | The actual shell command being run                  |
+| **Frequency** | Selected interval (Minutely, Hourly, etc.)          |
+| **Schedule**  | Time of next execution                              |
+| **Status**    | Active / Inactive                                   |
+| **Action**    | Options to **Edit**, **Delete**, or **Disable** the cron job
+
+---
+
+## 🧪 Example Commands
+
+### 🔁 Minutely Cron Example (Laravel Scheduler)
+
+```bash
+cd /home/user/mystore && php artisan schedule:run

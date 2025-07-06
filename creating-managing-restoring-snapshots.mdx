@@ -1,0 +1,78 @@
+# 🧷 Taking, Managing & Restoring Snapshots
+
+WC Studio Snapshots allow you to **save**, **restore**, and **reapply** your store’s exact state — including database, files, plugins, themes, and settings. Whether you’re testing, updating, or troubleshooting, snapshots give you instant control with zero risk.
+
+---
+
+## 📍 Go to: WC Studio → Snapshots
+
+---
+
+## 📸 Taking a Snapshot
+
+Before making major changes, take a snapshot to preserve your current store state.
+
+### ✅ Steps to Take a Snapshot
+
+1. Go to the **Snapshots** panel.
+2. Click **“Create Snapshot”**.
+3. Give your snapshot a **name** (e.g. `Before Plugin Update`, `Launch-Ready`).
+4. Add an optional **description**.
+5. Click **Create Snapshot**.
+
+📦 WC Studio will package your entire store environment, including:
+- Files & folders
+- Database
+- PHP & WP settings
+- Plugin/theme status
+- Environment configuration
+
+---
+
+## 📂 Managing Snapshots
+
+All your snapshots will appear in a list under the Snapshots dashboard.
+
+| Column       | Description                                 |
+|--------------|---------------------------------------------|
+| **Snapshot Name** | The custom name you assigned           |
+| **Created On**    | Date & time the snapshot was taken     |
+| **Size**          | Total size of the snapshot package     |
+| **Status**        | Success / In-Progress / Failed         |
+| **Actions**       | Restore / Clone / Delete               |
+
+### 🛠 Snapshot Actions
+
+- **Restore**: Instantly roll your store back to this point.
+- **Clone**: Use this snapshot to launch a new identical store.
+- **Delete**: Permanently remove the snapshot from your archive.
+
+> 🧠 Snapshots are isolated per store, but can be reused across stores with the **Clone** option.
+
+---
+
+## ♻️ Restoring a Snapshot
+
+Restoring will **replace your current store state** with the saved snapshot.
+
+### ⚠️ Important Notes:
+- The restore process is **instant and irreversible**.
+- Always take a snapshot of the current state **before restoring**.
+- It includes both **database and file changes**.
+
+---
+
+## 🧠 When to Use Snapshots
+
+- 🔁 Before trying a new plugin or code snippet
+- 🧪 For testing design or feature changes
+- 🛠 During server-level updates or PHP version changes
+- 🧼 As a safety net before deleting or replacing content
+
+---
+
+## 💡 Pro Tips
+
+- ✅ Name snapshots clearly for easy reference (e.g. `Pre-Redesign`, `Q1 Launch`, `Clean Base`)
+- ✅ Pair snapshots with your **Configurations** for rapid setup + rollback
+- ✅ Use **Clone from Snapshot** to build staging environments instantly

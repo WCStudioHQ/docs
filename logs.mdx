@@ -1,0 +1,69 @@
+# 📄 Logs
+
+The **Logs** section in WC Studio provides access to **site-specific error logs**, allowing you to debug PHP errors, Laravel stack traces, cron failures, and more. This is your primary tool for identifying what went wrong when your store or custom features misbehave.
+
+---
+
+## 📍 Accessing Logs
+
+**Go to:** `WC Studio → Stores → Select a Store → Advanced → Logs`
+
+Each store has its own isolated logs for security, visibility, and clarity.
+
+---
+
+## 🧾 Log Format
+
+Logs follow a standard format, which includes:
+
+- Timestamp of the error
+- Error level (e.g. `local.ERROR`)
+- Error message
+- Stack trace
+
+## 🔍 Using the Logs Interface
+
+- Logs are **automatically grouped by date**
+- You can **search** by keywords (e.g., error type, class name)
+- Click any log entry to **expand** and view the full trace
+- Use **filters** to sort logs by severity: `error`, `warning`, `info`
+
+---
+
+## 🛠 Log Management Options
+
+| Option           | Description                                                  |
+|------------------|--------------------------------------------------------------|
+| **Download Logs**| Export logs as `.txt` files for local debugging              |
+| **Clear Logs**   | Manually delete old logs you no longer need                 |
+| **Auto Rotation**| WC Studio automatically rotates logs to prevent overgrowth  |
+
+---
+
+## ⚠️ Common Errors You'll See
+
+- 🔧 Missing service providers or Laravel packages  
+- 🧩 Plugin/theme compatibility errors  
+- 🛠 PHP fatal errors (class/function not found)  
+- ⏱ Cron job failures  
+- 🔗 Broken API/webhook integrations  
+
+---
+
+## 💡 Pro Tips
+
+- ✅ Enable `WP_DEBUG` and **Log Errors** in WP Config for detailed error tracking  
+- ✅ Pair logs with **Snapshots** to roll back if debugging causes new issues  
+- ✅ Use logs after updates, deployments, or plugin/theme changes to verify stability  
+
+### 🧠 Example Log Output
+
+```log
+[2025-01-22 10:31:11] local.ERROR: Class "Barryvdh\Debugbar\ServiceProvider" not found {
+"exception":"[object] (Error(code: 0): Class \"Barryvdh\\Debugbar\\ServiceProvider\" not found at /var/www/html/my.wcstudio.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:935)
+
+[stacktrace]
+#0 /vendor/laravel/framework/.../Application.php(867): resolveProvider()
+#1 /vendor/laravel/framework/.../ProviderRepository.php(75): register()
+...
+"}

@@ -1,0 +1,64 @@
+# 🔐 Backup Providers
+
+WC Studio allows you to securely connect external **Backup Providers** for storing your snapshots and backups off-site. You can choose from supported services like Amazon S3, DigitalOcean Spaces, FTP, and SFTP.
+
+---
+
+## 📍 Go to: WC Studio → Collaborators → Backup Providers
+
+---
+
+## ➕ Add a New Backup Provider
+
+You can connect your preferred backup storage by creating a new provider configuration.
+
+### ✅ Steps to Add a Provider
+
+1. Click **“Add New Provider”**
+2. Select your preferred provider from the list:
+   - Amazon S3
+   - DigitalOcean Spaces
+   - FTP
+   - SFTP
+3. Fill in the required credentials
+4. Enter a **Name** for internal reference (e.g. `Client S3 Bucket`, `Team FTP`)
+5. Toggle **Active** to enable usage
+6. Click **Create Provider**
+
+Once saved, this provider will be available for use in your store’s backup settings.
+
+---
+
+## 💼 Credential Structure
+
+| Field     | Description                                           |
+|-----------|-------------------------------------------------------|
+| **Name**  | Custom name to identify this backup destination       |
+| **Active**| Enable/disable this provider for future backups       |
+| **Provider** | Chosen service type (S3, FTP, etc.)               |
+| **Access Keys / Host / Bucket** | Varies by provider (entered securely) |
+
+> 🔒 WC Studio encrypts and securely stores all credentials.
+
+---
+
+## 📋 Backup Provider Table
+
+After you add providers, they will appear in a list for management.
+
+| Column     | Description                              |
+|------------|------------------------------------------|
+| **Name**   | Internal label for the provider          |
+| **Provider** | Type of service (e.g., S3, FTP)        |
+| **Status** | Active / Inactive                        |
+| **Created**| Date the provider was added              |
+| **Action** | Edit / Delete / Toggle status            |
+
+---
+
+## 💡 Pro Tips
+
+- ✅ Use S3 or Spaces for scalable, secure backup storage
+- ✅ Assign separate providers for different teams or clients
+- ✅ Keep at least one **off-site backup** at all times for disaster recovery
+- ✅ Regularly test connectivity to ensure your credentials are valid

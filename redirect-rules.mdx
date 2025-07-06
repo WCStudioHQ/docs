@@ -1,0 +1,63 @@
+# 🔁 Redirection Rules
+
+WC Studio allows you to redirect traffic from one URL to another — useful for SEO, fixing broken links, migrating content, or handling structural changes in your store.
+
+---
+
+## 📍 Go to: WC Studio → Stores → Select a Store → Advanced → Redirect Rules
+
+---
+
+## ➕ Create a Redirection Rule
+
+Use the **Redirection Rule Creator** to add a new redirect.
+
+### 🧾 Fields to Fill
+
+| Field              | Description                                                                  |
+|--------------------|------------------------------------------------------------------------------|
+| **Source URL**     | The old or incoming URL you want to redirect from.<br/>Example: `example.com/old-path` |
+| **Destination URL**| The new target URL visitors should be redirected to.<br/>Example: `https://example.com/new-path` |
+| **Redirect Type**  | Choose the type of redirect:<br/>🔁 `301 Permanent Redirect` (recommended)     |
+| **Options**        | Optional flags:<br/>- Preserve query parameters<br/>- Wildcard matching         |
+
+### ✅ Steps to Create a Rule
+
+1. Enter the **Source URL** (without domain prefix if internal).
+2. Enter the full **Destination URL** (starting with `https://`).
+3. Choose the **Redirect Type** (typically `301 Permanent Redirect`).
+4. (Optional) Enable:
+   - **Preserve Query Parameters** – Pass query strings through the redirect
+   - **Wildcard Matching** – Match all paths that follow the source URL pattern
+5. Click **Create Rule** to activate it.
+
+---
+
+## 📋 Redirection Rule Table
+
+After creating, all redirects will appear in a table view with:
+
+| Column         | Description                                                   |
+|----------------|---------------------------------------------------------------|
+| **Sl**         | Serial number of the rule                                     |
+| **Source URL** | The URL being redirected from                                 |
+| **Destination URL** | The new destination visitors are sent to              |
+| **Type**       | Redirect type (301, 302, etc.)                                 |
+| **Options**    | Indicates if query parameters or wildcards are enabled         |
+| **Action**     | Edit, Delete, or Temporarily Disable a rule                   |
+
+---
+
+## 🧠 Use Cases
+
+- 🔁 Redirect discontinued product pages to alternatives
+- 🔗 Preserve SEO from old URLs during site migrations
+- 🧼 Clean up broken links or outdated blog posts
+
+---
+
+## 💡 Best Practices
+
+- ✅ Use **301 Redirects** for permanent changes to maintain SEO value.
+- ✅ Always test redirects after creation to ensure accuracy.
+- ✅ Avoid redirect loops (e.g., `/a → /b → /a`).

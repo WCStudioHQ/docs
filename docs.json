@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "WC Studio",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -17,86 +17,71 @@
             "group": "Get Started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "understanding-store-environments",
+              "understanding-the-dashboard",
+              "backups",
+              "billing-billing-details",
+              "billing-invoices",
+              "billing-modify-plan",
+              "billing-my-plan-plan-details",
+              "billing-payment-methods",
+              "cdn",
+              "collaborators-backup-providers",
+              "collaborators-general-settings",
+              "collaborators-list-invite",
+              "creating-managing-restoring-snapshots",
+              "crons",
+              "database-credentials",
+              "email-sending",
+              "file-manager",
+              "logs",
+              "managing-configurations",
+              "managing-domains-ssl",
+              "performance-analytics",
+              "performance-caching",
+              "plugin-theme-management",
+              "products-plugins",
+              "products-themes",
+              "redirect-rules",
+              "reports-dashboard",
+              "reports-orders",
+              "reports-products",
+              "reports-sales-revenue",
+              "reports-traffic",
+              "security",
+              "settings-general",
+              "settings-php",
+              "snapshots-migration",
+              "store-overview",
+              "understanding-collaborators",
+              "understanding-configurations",
+              "understanding-snapshots",
+              "wp-config-settings"
             ]
           }
         ]
       }
     ],
     "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/dark.png",
+    "dark": "/logo/light.png",
+    "href": "https://wcstudio.com/"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Go Back",
+      "href": "https://wcstudio.com/"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/WCStudioHQ",
+      "facebook": "https://www.facebook.com/wcstudiohq",
+      "instagram": "https://www.instagram.com/wcstudiohq"
     }
   }
 }
